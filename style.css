@@ -1,0 +1,198 @@
+html {
+  background-color: dimgray;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  font-size: medium;
+  color: gainsboro;
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr;
+  grid-column-gap: 1px;
+  grid-template-rows: .5fr .5fr;
+  grid-row-gap: 1px;
+}
+
+nav {
+  background-color: darkgoldenrod;
+  overflow: hidden;
+  text-align: center;
+  list-style: none;
+  border: 1px solid white;
+  border-width: 2px 0;
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  box-sizing: border-box;
+}
+
+nav a {
+  float: center;
+  color: gainsboro;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: goldenrod;
+  color: dimgray;
+}
+
+section {
+  display: grid;
+  grid-template-columns: .33fr .67fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: auto;
+  grid-row-gap: 1px;
+  grid-auto-flow: column;
+}
+
+main header {
+  display: block;
+  text-align: center;
+}
+
+section header {
+  grid-column: 1 / span 3;
+}
+
+section .jobtitle, .employer, .location, .school {
+  grid-column: 2;
+  justify-self: start;
+  margin: 0;
+  padding: 0;
+}
+
+.degree {
+  grid-column: 3;
+  margin: 0;
+  padding: 0;
+  grid-row: span 2;
+  list-style: none;
+}
+
+#honors {
+  grid-column: 3;
+  margin: 0;
+}
+
+.grad {
+  grid-column: 1;
+  margin: 0;
+  grid-row: span 2;
+}
+
+.date {
+  margin: 0;
+  grid-column: 1;
+  grid-row: span 3;
+  justify-self: start;
+  align-self: start;
+}
+
+#teaching ul {
+  grid-column: 3 / 4;
+  grid-row: 2 / span 15;
+  align-self: stretch;
+}
+
+section .location {
+  padding-bottom: 1.5em;
+}
+
+.school {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.hamline {
+  grid-column: 3;
+  grid-row: 6;
+  margin: 0;
+}
+
+.grad {
+  grid-row: span 2;
+}
+
+.details li {
+  padding: .5em;
+}
+
+#nature {
+  grid-column: 3 / 4;
+  grid-row: span 6;
+  margin-bottom: 30px;
+}
+
+#joyce {
+  grid-column: 3 / 4;
+  grid-row: span 4;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+}
+
+header h2 {
+  text-align: center;
+  grid-row: 2;
+  grid-column: 2;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+}
+
+section h2 {
+  padding: 10px;
+}
+
+ul {
+  font-size: 1em;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  color: goldenrod;
+}
+
+#email {
+  grid-column: 1;
+  margin: 0;
+  padding: 10px;
+  justify-self: start;
+}
+
+#phone {
+  grid-column: 3;
+  margin: 0;
+  padding: 10px;
+  justify-self: end;
+}
+
+#skills p {
+  grid-row: 2;
+  grid-column: span 3;
+  margin: 0;
+  text-align: center;
+}

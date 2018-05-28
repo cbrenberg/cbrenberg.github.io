@@ -133,13 +133,13 @@ section .location {
 }
 
 #nature {
-  grid-column: 3 / 4;
+  grid-column: 3;
   grid-row: span 6;
   margin-bottom: 30px;
 }
 
 #joyce {
-  grid-column: 3 / 4;
+  grid-column: 3;
   grid-row: span 4;
 }
 

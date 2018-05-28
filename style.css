@@ -6,11 +6,12 @@ html {
 header {
   font-size: medium;
   color: gainsboro;
+}
+
+#topheader {
   display: grid;
   grid-template-columns: .5fr 1fr .5fr;
   grid-column-gap: 1px;
-  grid-template-rows: .5fr .5fr;
-  grid-row-gap: 1px;
 }
 
 nav {
@@ -52,7 +53,7 @@ nav a:hover {
 
 section {
   display: grid;
-  grid-template-columns: .33fr .67fr 1fr;
+  grid-template-columns: .5fr 1fr 50%;
   grid-column-gap: 10px;
   grid-template-rows: auto;
   grid-row-gap: 1px;
@@ -81,11 +82,13 @@ section .jobtitle, .employer, .location, .school {
   padding: 0;
   grid-row: span 2;
   list-style: none;
+  margin-left: 40px;
 }
 
 #honors {
   grid-column: 3;
   margin: 0;
+  margin-left: 40px;
 }
 
 .grad {
@@ -136,11 +139,13 @@ section .location {
   grid-column: 3;
   grid-row: span 6;
   margin-bottom: 30px;
+  align-self: stretch;
 }
 
 #joyce {
   grid-column: 3;
   grid-row: span 4;
+  align-self: stretch;
 }
 
 h1 {
@@ -183,6 +188,7 @@ a {
   margin: 0;
   padding: 10px;
   justify-self: start;
+  align-self: end;
 }
 
 #phone {
@@ -190,6 +196,7 @@ a {
   margin: 0;
   padding: 10px;
   justify-self: end;
+  align-self: end;
 }
 
 #skills p {

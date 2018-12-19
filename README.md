@@ -1,2 +1,3 @@
 # cbrenberg.github.io
-Online resume for application to Prime Digital Academy.
+My personal website and professional portfolio. 
+Hosted at www.christopherbrenberg.com

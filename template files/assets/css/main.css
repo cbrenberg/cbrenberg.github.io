@@ -2871,7 +2871,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 3em 0 4em 0;
 		position: relative;
 	}
 
@@ -3710,8 +3710,8 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-top: 0;
-		min-height: 100vh;
-		height: 100vh !important;
+		min-height: 30vh;
+		height: 30vh !important;
 		position: relative;
 		text-align: center;
 		overflow: hidden;
@@ -3796,7 +3796,7 @@
 			background-color: #000;
 			height: 100%;
 			left: 0;
-			opacity: 0.65;
+			opacity: 0.45;
 			position: absolute;
 			top: 0;
 			width: 100%;

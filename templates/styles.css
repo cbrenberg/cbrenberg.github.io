@@ -212,3 +212,16 @@ h1 {
   align-items: center;
   width: 100%;
 }
+
+#attributeVerification div.error {
+  color: red;
+}
+
+#attributeVerification div.error::before {
+  content: '* '
+}
+
+#attributeVerification .verifying-modal #verifying_blurb {
+  font-weight: 700;
+  font-style: italic;
+}

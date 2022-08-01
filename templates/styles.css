@@ -51,8 +51,164 @@ h1 {
 }
 
 #attributeVerification .buttons {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#attributeList {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  justify-content: stretch;
+}
+
+#attributeList ul li {
+  width: 80%;
+  margin: .3rem 0;
+}
+
+#attributeList ul li label {
+  float: left;
+  display: none !important;
+}
+#attributeList ul li.CheckboxMultiSelect label,
+#attributeList ul li.RadioSingleSelect label {
+    display: block !important;
+}
+#attributeList ul li label[for=country] {
+  float: left;
+  display: inline-block !important;
+  margin-bottom: 0.5rem;
+}
+#attributeList ul li label[for=cpiminternal_legalCountry] {
+  float: none;
+  display: block !important;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+#attributeList ul li label[for=cpiminternal_dateOfBirth] {
+  float: none;
+  text-align: left;
+  display: block !important;
+  margin-bottom: 0.5rem;
+}
+#attributeList ul li input {
+  outline: none;
+  height: 30px;
+  width: 100%;
+  border-radius: 0.2rem;
+  text-indent: 20px;
+  padding: 0;
+}
+#attributeList ul li input::-webkit-input-placeholder {
+  text-indent: 20px;
+}
+#attributeList ul li .attrEntry.validate input:invalid, #attributeList ul li .attrEntry.validate input.invalid {
+    border: 1px solid #bb0000;
+}
+#attributeList ul li .attrEntry .verify {
+    margin-top: 2rem;
+    padding-bottom: 10px;
+    position: relative;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_send {
+  width: 60%;
+  height: 50px;
+  background-color: #296ec6;
+  color: white;
+  border-radius: 0.5rem;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_send:hover {
+  background-color: #1662c7;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_verify {
+    width: inherit;
+    padding: 0px 20px;
+    height: 50px;
+    background-color: #296ec6;
+    color: white;
+    margin-right: 5px;
+    border-radius: 0.5rem;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_verify:hover {
+  background-color: #1662c7;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_resend {
+    width: inherit;
+    padding: 0px 20px;
+    border: 0;
+    font-size: 1em;
+    height: 50px;
+    right: 0;
+    bottom: -38px;
+    background-color: #296ec6;
+    color: white;
+    border-radius: 0.5rem;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_resend:hover {
+  background-color: #1662c7;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_edit {
+  border: none;
+  color: white;
+  background-color: #296ec6;
+  width: 60%;
+  height: 50px;
+  border-radius: 0.5rem;
+}
+#attributeList ul li .attrEntry .verify #email_ver_but_edit:hover {
+  background-color: #1662c7;
+}
+#attributeList ul li .attrEntry .verify #email_ver_input_label {
+  display: none !important;
+}
+#attributeList ul li .attrEntry .itemLevel {
+  display: none;
+}
+#attributeList ul li .attrEntry .dropdown_single {
+    height: 45px;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding-left: 15px;
+    box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
+}
+#attributeList ul li .attrEntry .dropdown_single option:first-child {
+    display: block !important;
+}
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date {
+  display: table;
+  width: 100%;
+}
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select {
+  border-radius: 0.5rem;
+  display: table-cell;
+  height: 50px;
+  box-shadow: 0px 2px 10px rgba(0,0,150,0.15);
+  padding-left: 15px;
+}
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth select#cpiminternal_dateOfBirth_day.day {
+  margin-right: 3%;
+  width: 23%;
+}
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth select#cpiminternal_dateOfBirth_month.month {
+  margin-right: 3%;
+  width: 38%;
+}
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth select#cpiminternal_dateOfBirth_year.year {
+  width: 33%;
+}
+#attributeList ul li .helpLink {
+  display: none;
+}
+
+#attributeList ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }

@@ -4,8 +4,19 @@
   font-size: 12px;
 }
 
+body.b-three {
+	font-family: Open Sans,Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	color: #4b5763;
+}
+
+#container.b-three {
+	padding: 0px;
+}
+
 #container {
   width: 40vw;
+	max-width: 600px;
   margin: auto;
   padding: 15px;
   border: none;
@@ -25,23 +36,139 @@
   margin: auto;
 }
 
+#header {
+	padding: 15px 0;
+}
+
+#header.b-three {
+	background-color: #757775;
+	padding: 20px 0;
+}
+
+div.b-three {
+	padding: 15px;
+}
+
+#api {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 h1 {
   color: blue;
   text-align: center;
 }
+
 .intro h2 {
   text-align: center;
 }
-.entry {
-  width: 400px ;
-  margin-left: auto ;
-  margin-right: auto ;
+
+h4 {
+	font-size: 18px;
+	margin: 10px 0; 
 }
+
+.entry {
+  width: 100%;
+  margin: auto;
+}
+
 .divider h2 {
   text-align: center;
 }
+
 .create {
-  width: 400px ;
-  margin-left: auto ;
-  margin-right: auto ;
+  width: 100%;
+  margin: auto;
+}
+
+#attributeVerification .buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#attributeList {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  justify-content: stretch;
+}
+
+#attributeList ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#attributeList ul li {
+  width: 80%;
+  margin: .3rem 0;
+}
+
+#attributeList ul li label {
+  float: left;
+  display: none !important;
+}
+
+#attributeList ul li input {
+  outline: none;
+  height: 30px;
+  width: 100%;
+  border-radius: 0.2rem;
+  text-indent: 20px;
+  padding: 0;
+}
+
+#attributeList ul li input::-webkit-input-placeholder {
+  text-indent: 20px;
+}
+
+#attributeList ul li .attrEntry.validate input:invalid, #attributeList ul li .attrEntry.validate input.invalid {
+  border: 1px solid #bb0000;
+}
+
+#attributeList ul li .attrEntry .verify {
+  margin-top: 2rem;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#attributeList ul li .attrEntry .verify #email_ver_input_label {
+  display: none !important;
+}
+
+#attributeList ul li .attrEntry .itemLevel {
+  display: none;
+}
+
+#attributeList ul li .helpLink {
+  display: none;
+}
+
+#attributeVerification div.error {
+  color: red;
+}
+
+#attributeVerification div.error::before {
+  content: '* ';
+}
+
+#attributeVerification .verifying-modal #verifying_blurb {
+  font-weight: 700;
+  font-style: italic;
+}
+
+#simplemodal-container .simplemodal-data {
+  padding: 5px 8px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 3px;
+  font-style: italic;
 }

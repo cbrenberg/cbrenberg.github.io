@@ -172,3 +172,11 @@ h4 {
   border-radius: 3px;
   font-style: italic;
 }
+
+.buttons button#signInName_ver_but_edit, .buttons button:hover#signInName_ver_but_edit {
+  display: none;
+}
+
+div.heading {
+  display: none;
+}

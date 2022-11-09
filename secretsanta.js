@@ -137,12 +137,12 @@ function printMatches(personArray) {
     currentResult.innerHTML = `${person.name}<span id='recipient-${person.ID}' hidden> gives to ${recipient.name}</span>`;
     resultDiv.appendChild(currentResult);
 
-    currentResult.addEventListener('mousedown', function (e) {
+    currentResult.addEventListener('pointerdown', function (e) {
       var hiddenSpan = e.target.firstElementChild;
       hiddenSpan.hidden = false;
     });
 
-    currentResult.addEventListener('mouseup', function (e) {
+    currentResult.addEventListener('pointerup', function (e) {
       var hiddenSpan = e.target.firstElementChild;
       hiddenSpan.hidden = true;
     });
